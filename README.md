@@ -61,4 +61,32 @@ The process is repeated using L1-penalized logistic regression, cross-validating
 
 ## Multiclass Classification
 
-An L1-penalized multinomial regression model is built for classifying
+The test error was reported for the multiclass classification scenario after determining the best number of time series subdivisions (l) through cross-validation. Confusion matrices and ROC curves were also provided where applicable to assess model performance comprehensively.
+
+## Naïve Bayes Classification
+
+The Naïve Bayes classifier was applied using both Gaussian and Multinomial priors. A comparative analysis of these classifiers was conducted to determine which prior is more effective for this particular multiclass classification problem.
+
+## Discussion
+
+### Binary Classification
+
+- **Logistic Regression Models**: Demonstrated capability to distinguish between bending activities and others, with scatter plots showing clear clustering patterns.
+- **Time Series Segmentation**: Breaking down time series into shorter segments revealed changes in feature behavior and impacted classification performance.
+- **Model Complexity**: Optimal complexity was achieved by balancing the number of features against predictive accuracy through cross-validation.
+
+### Multiclass Classification
+
+- **Multinomial Logistic Regression**: Employed with L1 penalization to classify multiple activity types.
+- **Model Evaluation**: Utilized metrics appropriate for multiclass classification to ensure a thorough assessment of model performance.
+
+### Comparative Analysis
+
+- **Model Comparison**: The strengths and limitations of logistic regression with L1 penalization versus Naïve Bayes classifiers were explored.
+- **Feature Selection Techniques**: The efficacy of recursive feature elimination and p-value based selection was critically examined.
+
+## Conclusion
+
+The analysis of the AReM dataset has shown that feature engineering and model selection are critical in the classification of human activities from time series data. Both binary and multinomial logistic regression, as well as Naïve Bayes classifiers, have provided valuable insights. This project highlights the importance of preprocessing, feature extraction, and model evaluation in creating robust classification models for time series data.
+
+
