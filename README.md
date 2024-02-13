@@ -1,5 +1,3 @@
-# Human-Activity-Recognition-Using-Time-Series-Data
-
 # Human Activity Recognition Using Time Series Data
 
 ## Introduction
